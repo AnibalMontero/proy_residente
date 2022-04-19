@@ -46,7 +46,7 @@ body{
 }
 .main-head{
     grid-area: header;
-    background: blue;
+    background: #4BC6B9;
     padding: 40px;
     font-size: 3em;
     text-align: center;
@@ -58,7 +58,7 @@ body{
 }
 .ads{
     grid-area: ads;
-    background: purple;
+    background: #73C1C6;
     min-height: 200px;
 }
 .side{
@@ -69,7 +69,7 @@ body{
 
 .main-footer{
     grid-area: footer;
-    background: red;
+    background: #B57BA6;
     padding: 40px;
     font-size: 2em;
     text-align: center;
