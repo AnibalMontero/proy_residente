@@ -1,92 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
-.wrapper{
+.principal{
     display: grid;
-    grid-gap: 5px;
+    /* grid-gap: 5px; */
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-areas: 
     'header header header header'
-    'nav nav nav nav'
-    'side content content ads'
+    'side content content publi'
     'footer footer footer footer';
 }
 
-.main-nav{
-    grid-area: nav;
+.barra-nav{   
+     margin-top: 5px;    
 }
-.main-nav ul{
-    display: flex;
+.barra-nav ul{
+    display:flex;
+    flex-direction: row-reverse;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: black;
     color:white;
-    height: 40px;
+    height: 50px;
+    min-width: 375px;
+    
 }
-.main-nav li{
-    padding-left: 10px;
+.barra-nav li{
+    padding-right: 10px;
+    
 }
-.main-nav a {
+.barra-nav a {
     display: block;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1,5em;
+    font-weight: bold;
     text-decoration: none;
     color: white;
-    padding: 5px 10 px;
+    padding: 20px 20px; 
+    text-transform: capitalize;
+    
 }
-.main-nav a:hover{
-    background-color: #ccc;
+.barra-nav a:hover{
+    color: darkgoldenrod;
 }
-.main-head{
+.cabec-prin{
     grid-area: header;
-    background: #4BC6B9;
-    padding: 40px;
-    font-size: 3em;
-    text-align: center;
+    width: 100%;
+    height: 680px; 
+    background: url(./img/residenteportada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center left;
 }
 
-.content{
+div#letrero{
+    display:flex; 
+    flex-direction: row ; 
+    justify-content: flex-end;   
+    
+    margin-top: 120px;
+    padding-right: 60px;
+}
+
+
+#letrero h2{
+    font-size: 7rem;      
+    overflow: hidden;
+    color: #ccc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    
+}
+
+.contenido{
     grid-area: content;
 
 }
-.ads{
-    grid-area: ads;
+ .publi{
+    grid-area: publi;
     background: #73C1C6;
     min-height: 200px;
-}
+} 
 .side{
     grid-area: side;
     background: pink;
     min-height: 200px;
 }
 
-.main-footer{
+.foot-princ{
     grid-area: footer;
-    background: #B57BA6;
-    padding: 40px;
-    font-size: 2em;
+    background: black;
+    color:#ccc;
+    padding: 10px;
+    font-size: 1em;
     text-align: center;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+}
+/* inicio estilos del footer */
+
+.foot-princ > div{
+    flex:auto;
+    width: 33%;
+    overflow: hidden;
+}
+div#columna1{
+    flex-direction: column;
+    border-right: 1px dotted #ccc;
+    font-size: 0.85em;
+}
+#columna1 span{
+    color:orange;
+    font-size: 1.2em;
+}
+#columna2 em{
+    color:orange;
+}
+div#columna3{
+    border-left: 1px dotted #ccc;
+}
+#columna3 img{
+    margin-top: 20px;
+    font-size: 0.85em;
+    
 }
 
-@media (max-width: 600px){
-    .main-nav ul{
-        flex-direction: column;
-    }
-    .wrapper{
+
+    
+
+/* inicio de media query */
+@media (max-width: 768px){
+    
+    .contenedor{
         grid-template-columns: auto;
         grid-template-areas: 
         'header'
-        'nav'
         'content' 
         'side'
-        'ads'
+        'publi'
         'footer';
     }
+    div#letrero{
+        flex-direction: column ; 
+        width: 100%;
+        margin-top: 60px;
+        padding-left: 10px;
+    }
+    
+    
+    #letrero h2{
+        font-size: 3rem;      
+        
+        
+    }
+    
+    .barra-nav ul{       
+        flex-direction: column;    
+    }
+
+    .foot-princ > div{
+       width: 100%;
+    }
+
+   .foot-princ{
+     font-size: 0.65em;
+     flex-direction: column;
+    
+}
+   /* fin media query */
+    
 }

@@ -1,0 +1,26 @@
+#cabebiografia{
+   grid-area: header;
+   width: 100%;
+   height: 680px; 
+   background: url(./img/biografia.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center top;
+}
+#cabebiografia a{
+  color:white;
+}
+#cabebiografia a:hover{
+   color: black;
+}
+
+    
+
+/* inicio de media query */
+@media (max-width: 768px){
+    
+    
+   /* fin media query */
+    
+}

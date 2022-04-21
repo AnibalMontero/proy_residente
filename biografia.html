@@ -4,24 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biografia</title>
+    <title>Biografía</title>
     <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="./biografia.css" type="text/css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header class="main-head" id="cabecera">BIOGRAFIA</header>
+    <div class="principal">
+      <header class="cabec-prin" id="cabebiografia">
+        <nav class="barra-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+          </ul>
+        </nav>
 
-      <nav class="main-nav">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <div id="letrero">
+          <h2>BIOGRAFÍA</h2>
+        </div>
+      </header>
 
-      <article class="content">
+      <article class="contenido">
         <h1>Área principal</h1>
-        <img src="https://dummyimage.com/600x400/000/fff&text=imagen" />
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
           laudantium alias, illo soluta amet blanditiis tempore quidem optio ad
@@ -29,10 +33,39 @@
           adipisci ea error.
         </p>
       </article>
-      <div class="ads">Publicidad aqui</div>
+      <div class="publi">Publicidad aqui</div>
       <aside class="side">Sidebar</aside>
-      <footer class="main-footer" id="footer">
-        El pie de página. copyright (c) Anibal
+
+      <!-- footer -->
+      <footer class="foot-princ" id="footer">
+        <div id="columna1">
+          <div>
+            <p>
+              <span>Tienda oficial</span><br /><br />
+              23 Main, Street New York <br />United States <br />+88 01912704287
+              <br />example@example.com
+            </p>
+          </div>
+        </div>
+        <!-- fin de columna1  -->
+        <div id="columna2">
+          <img src="./img/logocentro.jpg" width="338px" height="96px" alt="" />
+          <em>copyright (c) calle 13 music</em>
+        </div>
+        <!-- fin de columna2  -->
+
+        <div id="columna3">
+          <div>
+            <img src="./img/facebook.jpg" width="45px" height="44px" alt="" />
+            <img src="./img/instagram.jpg" width="45px" height="44px" alt="" />
+            <img src="./img/youtube.jpg" width="45px" height="44px" alt="" />
+            <img src="./img/twitter.jpg" width="45px" height="44px" alt="" />
+          </div>
+          <div>
+            <img src="./img/logor.jpg" width="80px" height="80px" alt="" />
+          </div>
+        </div>
+        <!-- fin de columna3 -->
       </footer>
     </div>
     <script type="text/javascript" src="./ejemplo.js"></script>
