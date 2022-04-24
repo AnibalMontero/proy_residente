@@ -132,6 +132,22 @@ div#columna3{
     
 }
 
+#columna3 a:hover{
+    background-color: #ccc;
+    
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+ }
+ p{
+    margin: 10px;
+    text-align: justify;
+ }
+ a{
+    color: #550C18;  
+ }
+
 
     
 

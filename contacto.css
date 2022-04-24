@@ -1,3 +1,13 @@
+.principal{
+   display: grid;
+   /* grid-gap: 5px; */
+   grid-template-columns: 15% 35% 35% 15%;
+   grid-template-areas: 
+   'header header header header'
+   'content content content content'
+   'footer footer footer footer';
+}
+
 #cabecontacto{
    grid-area: header;
    width: 100%;
@@ -42,23 +52,57 @@
    height: 30px;
    border: 1px solid gray;
 }
+input[type="email"]::placeholder{
+   color:olivedrab;
+   font-size: 0.8em;
+   
+}
 input[type="text"]:not([size]) {
    width: 18em;
    }
 input[type="email"]:not([size]) {
       width: 18em;
       }
+
 .contactar button{
    background-color: olivedrab;
    color: white;
    height: 40px;
    width: 75%;
 }
+
+.infocontacto dl{
+   display: block;
+   height: 300px;
+   justify-content: center;
+   background-color: #eee;
+   border-radius: 5px;
+   margin: 20px 20px 40px 20px;
+   padding: 20px;
+}
+.infocontacto dt{
+  color: olivedrab;
+  font-size: 1.2em;
+}
+.infocontacto dd{
+   font-size: 0.9em;
+   margin-bottom: 30px;
+ }
+ 
     
 
 /* inicio de media query */
 @media (max-width: 768px){
-    
+   .principal{
+      display: grid;
+     grid-template-columns: auto;
+      
+   }
+   .contactar{
+      
+      flex-direction: column;
+      
+   }
     
    /* fin media query */
     

@@ -1,3 +1,12 @@
+.principal{
+   display: grid;
+   /* grid-gap: 5px; */
+   grid-template-columns: 40% 40% 20%;
+   grid-template-areas: 
+   'header header header'
+   'content content publi'
+   'footer footer footer';
+}
 #cabebiografia{
    grid-area: header;
    width: 100%;
@@ -14,12 +23,105 @@
 #cabebiografia a:hover{
    color: black;
 }
+.tablas{
+   display: grid;
+   justify-content: space-between;
+   grid-template-columns: auto auto;
+   grid-template-areas: 
+   'areatabla1 areatabla2'
+   'areatabla3 areatabla3';
+}
+
+#tabla1{
+   grid-area: areatabla1;
+   border: 1px solid #ccc;
+   margin: 20px;
+   
+}
+#tabla1 th{
+ background-color: #D6EDFF;    
+ color: #550C18;
+ font-size: medium;
+}
+#tabla1 td{
+   border-top:1px dotted  darkgray;
+   border-bottom:1px dotted  darkgray;
+   font-size: 0.9em;
+   
+  }
+#tabla2{
+   grid-area: areatabla2;
+   border: 1px solid #ccc;
+   margin: 20px;
+
+}
+#tabla2 th{
+   background-color: #CDDFA0;    
+   color: #550C18;
+   font-size: medium;
+  }
+#tabla2 td{
+     border-top:1px dotted  darkgray;
+     border-bottom:1px dotted  darkgray;
+     font-size: 0.9em;
+     
+    }
+#tabla3{
+   grid-area: areatabla3;
+   border: 1px solid #ccc;
+   margin: 20px;
+}
+#tabla3 th{
+   background-color: #E6C79C;    
+   color: #550C18;
+   font-size: medium;
+  }
+#tabla3 td{
+     border-top:1px dotted  darkgray;
+     border-bottom:1px dotted  darkgray;
+     font-size: 0.9em;
+     
+    }
+.publi section{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+iframe{
+   padding: 2px;
+   margin: 2px;
+   overflow: hidden;
+   align-content: center;
+}
+h2{
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 0.9em;
+   
+}
+
+
 
     
 
 /* inicio de media query */
 @media (max-width: 768px){
-    
+   .principal{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      
+   }
+   .tablas{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+   }
+  
+     
+   
     
    /* fin media query */
     
