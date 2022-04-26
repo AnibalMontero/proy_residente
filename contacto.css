@@ -83,25 +83,91 @@ input[type="email"]:not([size]) {
 .infocontacto dt{
   color: olivedrab;
   font-size: 1.2em;
+  
 }
 .infocontacto dd{
    font-size: 0.9em;
    margin-bottom: 30px;
  }
  
+ .icon::before {
+   display: none;
+   
+ }
+ .dir, .check, .correo, .telef{
+   margin-bottom: 1.5rem;
+   padding-right: 0.5rem;
+ }
+ .dir::before{
+   font: var(--fa-font-solid);
+   content: "\f3c5";
+   
+}
+.check::before{
+   font: var(--fa-font-solid);
+   content: "\f00c";   
+}
+.correo::before{
+   font: var(--fa-font-solid);
+   content: "\f0e0";   
+}
+.telef::before{
+   font: var(--fa-font-solid);
+   content: "\f095";   
+}
+.contdos {
+   display: flex;
+  
+   
+}
+.contdos div{
+   flex-direction: column;
+   margin:20px;
+   padding: 10px;
+   justify-content: space-between;
+   background-color: #f2f2f2;
+   border-radius: 5px;
+   border: 1px solid lightgrey;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+   animation: fadeInRight 1000ms ease-in-out;
+}
+ 
     
 
 /* inicio de media query */
 @media (max-width: 768px){
    .principal{
-      display: grid;
-     grid-template-columns: auto;
-      
+      display: flex;
+     flex-direction: column;
+     width: 98%;
    }
    .contactar{
-      
+      display: flex;
       flex-direction: column;
+      width: 98%;
+   }
+   .contdos {
+      display: flex;
+      flex-direction: column;
+      width: 98%;
       
+   }
+   .contdos div{
+      display: flex;
+      flex-direction: column;
+      width: 98%;
+      
+   }
+   .contactar li{
+      display: flex;
+      flex-direction: column;
+      width: 98%;
+   }
+   .infocontacto dl{
+      
+      display: flex;
+      flex-direction: column;
+      width: 98%;
    }
     
    /* fin media query */

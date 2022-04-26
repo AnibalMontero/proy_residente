@@ -23,24 +23,30 @@
 #cabebiografia a:hover{
    color: black;
 }
+article{
+   background: #f6f7f2;
+}
 .tablas{
    display: grid;
    justify-content: space-between;
    grid-template-columns: auto auto;
    grid-template-areas: 
-   'areatabla1 areatabla2'
+   'areatabla1 areatabla1'
    'areatabla3 areatabla3';
 }
 
 #tabla1{
    grid-area: areatabla1;
-   border: 1px solid #ccc;
+   background-color: #f2f2f2;
+   border-radius: 5px;
+   border: 1px solid lightgrey;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
    margin: 20px;
    
 }
 #tabla1 th{
- background-color: #D6EDFF;    
- color: #550C18;
+  background-color: #D5CFE1;    
+   color: #464655;
  font-size: medium;
 }
 #tabla1 td{
@@ -49,31 +55,24 @@
    font-size: 0.9em;
    
   }
-#tabla2{
-   grid-area: areatabla2;
-   border: 1px solid #ccc;
-   margin: 20px;
-
+  #tabla1 :hover{
+   animation: fadeInRight 1000ms ease-in-out;
 }
-#tabla2 th{
-   background-color: #CDDFA0;    
-   color: #550C18;
-   font-size: medium;
-  }
-#tabla2 td{
-     border-top:1px dotted  darkgray;
-     border-bottom:1px dotted  darkgray;
-     font-size: 0.9em;
-     
-    }
+
 #tabla3{
    grid-area: areatabla3;
-   border: 1px solid #ccc;
+   background-color: #f2f2f2;
+   border-radius: 5px;
+   border: 1px solid lightgrey;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
    margin: 20px;
 }
+#tabla3 :hover{
+   animation: fadeInLeft 1000ms ease-in-out;
+}
 #tabla3 th{
-   background-color: #E6C79C;    
-   color: #550C18;
+   background-color: #D5CFE1;    
+   color: #464655;
    font-size: medium;
   }
 #tabla3 td{
@@ -82,6 +81,7 @@
      font-size: 0.9em;
      
     }
+
 .publi section{
    display: flex;
    flex-direction: column;

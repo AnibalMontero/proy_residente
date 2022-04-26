@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto web personal</title>
+
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
@@ -24,25 +25,152 @@
       </header>
 
       <article class="contenido">
-        <h1>Área principal</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
-          laudantium alias, illo soluta amet blanditiis tempore quidem optio ad
-          excepturi molestias tempora qui! Atque voluptates temporibus voluptate
-          adipisci ea error.
+        <h1><span class="icon tituloh1">La voz de Calle 13</span></h1>
+
+        <p id="primerp">
+          "Soy <strong>Residente</strong>. Decidí hacer música basada en mi
+          <span>ADN</span>. Viajé a diferentes partes del mundo recolectando
+          sonidos y encontrando historias. Todos somos residentes del espacio
+          que ocupamos y en nuestro espacio las fronteras no existen"
         </p>
+        <p>
+          Creo que el arte debe transformarse para que siempre sea nuevo. Por
+          tal razón cada vez que nuestra obra alcance un nivel de popularidad
+          que nos permita estar cómodos, debemos abandonarla antes de que se
+          convierta en una fórmula la cual evite el desarrollo del arte nuevo
+        </p>
+        <div class="contenedor">
+          <div class="cajaicono">
+            <div class="icontitle">
+              <img src="./iconos/music.svg" width="40px" height="40px" />
+              <h3>Mi música</h3>
+            </div>
+            <p>
+              Rapero, compositor y cantante. Miembro fundador y vocalista de
+              Calle 13. Mi música combina la música del mundo y el contenido de
+              mis letras están principalmente relacionados con temas sociales y
+              políticos.
+            </p>
+          </div>
+          <div class="cajaicono">
+            <div class="icontitle">
+              <img src="./iconos/idea.svg" width="40px" height="40px" />
+              <h3>Compromiso Social</h3>
+            </div>
+            <p>
+              Colaboración en campañas sociales con Unicef y Amnistía
+              Internacional y defensor de la educación pública latinoamericana y
+              de los derechos de los pueblos indígenas.Fue censurado en Puerto
+              Rico por insultar públicamente al gobernador.
+            </p>
+          </div>
+        </div>
+        <div class="contenedor">
+          <div class="cajaicono">
+            <div class="icontitle">
+              <img src="./iconos/start.svg" width="40px" height="40px" />
+              <h3>Crítica Social</h3>
+            </div>
+            <p>
+              Acérrimo defensor de la independencia de Puerto Rico, isla
+              caribeña que desde 1952 es un estado libre asociado de Estados
+              Unidos. René rechaza la existencia de bases militares
+              estadounidenses en la isla.
+            </p>
+          </div>
+          <div class="cajaicono">
+            <div class="icontitle">
+              <img src="./iconos/ok.svg" width="40px" height="40px" />
+              <h3>Premios</h3>
+            </div>
+            <p>
+              Como líder de Calle 13 he ganado un total de
+              <b>32 premios Grammy Latinos</b> y otros 5 en mi carrera en
+              solitario. Medalla Ramón Emeterio Betances por la "invaluable
+              contribución a la integración de Puerto Rico a América Latina a
+              través de mis composiciones"
+            </p>
+          </div>
+        </div>
       </article>
-      <div class="publi">Publicidad aqui</div>
-      <aside class="side">Sidebar</aside>
+      <div class="publi">
+        <h3>Conciertos</h3>
+        <div class="contpubli">
+          <ul>
+            <li>
+              <img
+                src="./iconos/flag-spain.svg"
+                width="20px"
+                height="20px"
+              /><span>Madrid</span>
+              <p>Wizink Center</p>
+              <em>25/06/22</em>
+            </li>
+            <li>
+              <img
+                src="./iconos/flag-germany.svg"
+                width="20px"
+                height="20px"
+              /><span>Frankfurt</span>
+              <p>Universitätsplatz</p>
+              <em>02/08/22</em>
+            </li>
+            <li>
+              <img
+                src="./iconos/flag-canada.svg"
+                width="20px"
+                height="20px"
+              /><span>Quebec</span>
+              <p>Videotron Center</p>
+              <em>16/09/22</em>
+            </li>
+            <li>
+              <img src="./iconos/cuba.svg" width="20px" height="20px" /><span
+                >Habana</span
+              >
+              <p>Teatro Nacional</p>
+              <em>14/03/23</em>
+            </li>
+            <li>
+              <img
+                src="./iconos/united-states.svg"
+                width="20px"
+                height="20px"
+              /><span>Miami</span>
+              <p>J Gleason Theater</p>
+              <em>16/05/23</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="side">
+        <h3>EXITOS</h3>
+        <div class="contside">
+          <div>
+            <img src="./img/atrevete.jpg" width="180px" height="180px" alt="" />
+          </div>
+          <div>
+            <img
+              src="./img/notamerica.jpg"
+              width="180px"
+              height="180px"
+              alt=""
+            />
+          </div>
+          <div>
+            <img src="./img/rene.jpg" width="180px" height="180px" alt="" />
+          </div>
+        </div>
+      </aside>
 
       <!-- footer -->
       <footer class="foot-princ" id="footer">
         <div id="columna1">
           <div>
             <p>
-              <span>Tienda oficial</span><br /><br />
+              <span>Dirección</span><br /><br />
               23 Main, Street New York <br />United States <br />+88 01912704287
-              <br />example@example.com
+              <br />info@residente.com
             </p>
           </div>
         </div>
@@ -56,16 +184,32 @@
         <div id="columna3">
           <div>
             <a href="#"
-              ><img src="./img/facebook.jpg" width="45px" height="44px" alt=""
+              ><img
+                src="./iconos/social-facebook.svg"
+                width="40px"
+                height="40px"
+                alt=""
             /></a>
             <a href="#"
-              ><img src="./img/instagram.jpg" width="45px" height="44px" alt=""
+              ><img
+                src="./iconos/instagram.svg"
+                width="40px"
+                height="40px"
+                alt=""
             /></a>
             <a href="#"
-              ><img src="./img/youtube.jpg" width="45px" height="44px" alt=""
+              ><img
+                src="./iconos/social-youtube.svg"
+                width="40px"
+                height="40px"
+                alt=""
             /></a>
             <a href="#"
-              ><img src="./img/twitter.jpg" width="45px" height="44px" alt=""
+              ><img
+                src="./iconos/social-twitter.svg"
+                width="40px"
+                height="40px"
+                alt=""
             /></a>
           </div>
           <div>
@@ -76,5 +220,10 @@
       </footer>
     </div>
     <script type="text/javascript" src="./ejemplo.js"></script>
+    <script
+      data-search-pseudo-elements
+      src="https://kit.fontawesome.com/f737751420.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
