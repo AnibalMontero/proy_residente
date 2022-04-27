@@ -203,6 +203,9 @@ div#columna1{
     color:orange;
     font-size: 1.2em;
 }
+#columna2 p{
+    text-align: center;
+}
 #columna2 em{
     color:orange;
 }
@@ -245,7 +248,6 @@ h1{
     
  div[class="cajaicono"]{
      border-radius: 5px;
-     /* box-shadow: inset; */
      border: 1px solid lightgrey;
      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
      
